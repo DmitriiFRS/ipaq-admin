@@ -421,6 +421,12 @@ export interface ApiNewNew extends Schema.CollectionType {
           localized: false;
         };
       }>;
+    seoDescription: Attribute.Text &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
